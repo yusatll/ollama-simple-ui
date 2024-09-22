@@ -1,0 +1,141 @@
+/* Tam ekran ayarları ve hizalama */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Sayfa yüksekliğini tam ekran yap */
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+}
+
+/* Chat konteyner */
+.chat-container {
+  background-color: #3b3f58;
+  width: 90%; /* Genişlik %80 */
+  max-width: 900px; /* Maksimum genişlik ayarı */
+  height: 80vh; /* Yükseklik %80 */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+/* Model seçici */
+.model-selector {
+  padding: 10px;
+  background-color: #2c2f48;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-selector label {
+  margin-right: 10px;
+}
+
+.model-selector select {
+  padding: 5px;
+  background-color: #3b3f58;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #27293d;
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #3b3f58;
+  border-top: 1px solid #444860;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4c43ba;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* Kullanıcı mesajları */
+.user {
+  background-color: #0984e3;
+  align-self: flex-end;
+  color: white;
+}
+
+/* Bot mesajları */
+.bot {
+  background-color: #444860;  /* Daha koyu bir arka plan */
+  color: #e0e0e0; /* Daha açık bir yazı rengi */
+  align-self: flex-start;
+}
+
+/* Kod bloğu stili */
+.code-block {
+  position: relative;
+  background-color: #2d2d2d;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  overflow: auto;
+  font-size: 0.9em;
+}
+
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #4c43ba;
+}
+
+/* Highlight.js kod rengi */
+pre {
+  margin: 0;
+}
